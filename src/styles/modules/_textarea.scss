@@ -1,0 +1,25 @@
+.textarea-container {
+   display: flex;
+   flex-direction: column;
+   .label-name {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--muted-text-grey);
+   }
+   textarea {
+      all: unset;
+      resize: vertical;
+      cursor: text;
+      border: 1px solid var(--secondary-grey);
+      padding: 16px;
+      border-radius: 8px;
+      min-height: 161px;
+      &::placeholder {
+         color: var(--muted-text-grey);
+      }
+      &:focus {
+         outline: 2px solid var(--primary-purple);
+      }
+   }
+}

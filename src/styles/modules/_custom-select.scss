@@ -1,0 +1,41 @@
+.custom-select {
+   user-select: none;
+   position: relative;
+   input {
+      cursor: pointer;
+   }
+   svg {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      margin-right: 16px;
+      rotate: 180deg;
+   }
+   &.select-active {
+      input {
+         outline: 2px solid var(--primary-purple);
+         outline-offset: -2px;
+         border-radius: 8px 8px 0 0;
+      }
+      svg {
+         rotate: 0deg;
+      }
+   }
+   .custom-select-items {
+      .custom-select-item {
+         padding: 16px;
+         border: 1px solid var(--secondary-grey);
+         border-bottom: none;
+         color: var(--muted-text-grey);
+         cursor: pointer;
+         &:last-child {
+            border-radius: 0 0 8px 8px;
+            border-bottom: 1px solid var(--secondary-grey);
+         }
+         &.selected {
+            background: var(--primary-purple);
+            color: #fff;
+         }
+      }
+   }
+}

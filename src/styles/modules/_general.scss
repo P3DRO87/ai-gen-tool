@@ -1,0 +1,29 @@
+body {
+   font-family: "Noto Sans JP";
+}
+
+.text-center {
+   text-align: center;
+}
+
+.btn-primary {
+   all: unset;
+   cursor: pointer;
+   background: var(--primary-purple);
+   color: #fff;
+   border-radius: 8px;
+   padding: 16px;
+   min-width: 56px;
+   font-weight: 400;
+}
+
+.btn-secondary {
+   all: unset;
+   cursor: pointer;
+   background: var(--primary-grey);
+   color: #000;
+   border-radius: 8px;
+   padding: 16px;
+   min-width: 56px;
+   font-weight: 400;
+}
